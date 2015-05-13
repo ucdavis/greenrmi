@@ -1,0 +1,202 @@
+// baseline typography
+html {
+	font-size:10px;
+	-webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    line-height:1.5;
+    @include breakpoint(tablet) {
+	    font-size:8px;
+	}
+	@include breakpoint(mobile) {
+	    font-size:7px;
+	}
+}
+a:hover {
+	text-decoration:none;
+}
+a {
+	color:inherit;
+	font-family:$primary-sans;
+	&.discreet {
+		color:$tertiary-font;
+	}
+	&.invis {
+		color:inherit;
+		&:hover {
+			color:$primary-color;
+		}
+	}
+	footer & {
+		color:$spark-main;
+		font-size:1.4rem;
+	}
+}
+li {
+	font-family:$primary-sans;
+	font-size:1.6rem;
+	padding:.5rem;
+	color:$tertiary-font;
+}
+ul {
+	list-style-type: disc;
+	footer &.nav-list {
+		list-style-type: none;
+		padding-left:0px;
+		margin-bottom:0px;
+		display:inline-block;
+		li {
+			display:inline-block;
+			border-right:1px solid transparentize($spark-main,.5);
+			padding-right:10px;
+			margin-right:10px;
+			padding-top:0px;
+			padding-bottom:0px;
+			padding-left:0px;
+			&:last-child {
+				border-right:none;
+			}
+		}
+	}
+	&.spark_list {
+		color:$primary-font;
+		li {
+			color:$primary-font;
+			a {
+				color:$primary-font;
+				max-width:500px;
+				&:hover {
+					color:$primary-color;
+				}
+				
+			}
+		}
+	}
+
+}
+p {
+	line-height:1.625;
+	letter-spacing:.025rem;
+	font-size:1.6rem;
+	font-family:$primary-sans;
+	color:$primary-font;
+	.post_details & {
+		font-size:1.8rem;
+		color:$tertiary-font;
+	}
+	.post_text & {
+		font-size:2.4rem;
+	}
+	&.profile_name {
+		font-size:2.2rem;
+		color:$primary-font;
+		font-weight:600;
+		margin-bottom:-3px;
+	}
+	&.profile_title {
+		font-size:2rem;
+		color:$tertiary-font;
+		font-weight:400;
+	}
+	.comment_content & {
+		font-size:2.0rem;
+		color:$secondary-font;
+	}
+	.post_upvote & {
+		color:$spark-main;
+		font-size:2.2rem;
+		font-weight:600;
+		img {
+			margin-top:-5px;
+			margin-right:10px;
+		}
+	}
+}
+label, input {
+	font-family:$primary-sans;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family:$primary-sans;
+	color:$primary-font;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+	margin-top:1rem;
+	margin-bottom:1rem;
+	line-height:1.5;
+}
+h1, .h1 {
+	font-size:3.6rem;
+	font-weight:300;
+}
+h2, .h2 {
+	font-size:2.8rem;
+	line-height:1.5;
+	font-weight:300;
+	color:$primary-font;
+	&.green {
+		color:$spark-main;
+	}
+	&.blue {
+		color:$spectafy-blue;
+	}
+	&.red {
+		color:$spectafy-orange;
+	}
+	&.yellow {
+		color:$spectafy-yellow;
+	}
+}
+h3, .h3 {
+	font-size:2.4rem;
+	line-height:3rem;
+}
+h4 {
+	font-size:2rem;
+	line-height:3.2rem;
+	color:$primary-font;;
+}
+h5 {
+	font-size:1.4rem;
+	font-weight:bold;
+	color:$tertiary-font;
+}
+b, strong, th {
+	font-weight:800;
+}
+label {
+	font-weight:500;
+}
+legend {
+	font-weight:600;
+}
+span {
+	&.spec_time {
+		text-align:right;
+		color:$secondary-font;
+	}
+	&.seethrough {
+		color:rgba(255,255,255,.60)
+	}
+	&.comment_name {
+		color:$primary-font;
+		font-weight:600;
+		padding-right:2%;
+	}
+}
+span.blue {
+	color:$spectafy-blue;
+}
+span.green {
+	color:$spark-main;
+}
+span.orange {
+	color:$spectafy-orange;
+}
+a.twitter_blue {
+	color:#55acee;
+}
+a.facebook_blue {
+	color:#3B5998;
+}
+.tert-font {
+	color:$tertiary-font;
+}

@@ -1,0 +1,231 @@
+
+//mailchimp
+
+//buttons
+input.mailchimpbutton {
+  @include transformers;
+  background-color:$spark-main;
+  box-shadow:0 -3px 0 rgba(0, 0, 0, 0.15) inset;
+  border: none;
+  color:#fff;
+  font-family:$primary-sans;
+  font-weight:400;
+  font-size:1.6rem;
+  text-transform:uppercase;
+  text-align:center;
+  padding:.8rem 2rem;
+  border-radius:.25rem;
+  &.mailchimp_index{
+    display:inline-block;
+  }
+  &:hover{
+    background-color:lighten($spark-main,9);
+    padding:.8rem 2rem;
+  }
+  &.v_one_button {
+    display:block;
+    background-color:$spectafy-orange;
+    width:35%;
+    &:hover {
+      background-color:lighten($spectafy-orange,9);
+      padding:.8rem 2rem;
+    }
+  }
+}
+// form
+input.mailchimpforminput {
+  display:inline-block;
+  border-radius:.25rem;
+  background-color:#fff;
+  width:100%;
+  border:1px solid $quarternary-font;
+  max-width:35rem;
+  text-align:left;
+  font-family:$primary-sans;
+  font-weight:600;
+  padding:.6rem 2rem;
+  font-size:1.8rem;
+  margin-right:0px;
+  margin-bottom:2.5%;
+  border:2px solid $spark-main;
+  &.location{
+    width:22%;
+    background-image:url(/media/location_form.svg);
+    background-repeat: no-repeat;
+    padding-left:4rem;
+    background-position:14px center;
+    margin-right:0px;
+    &.v_one_form {
+      width:50%;
+      background-image:url(/media/location_form_orange.svg);
+    }
+  }
+  &.email {
+    background-image:url(/media/email_form.svg);
+    background-repeat: no-repeat;
+    background-position:14px center;
+    padding-left:4rem;
+    &.v_one_form {
+      width:60%;
+      background-image:url(/media/email_form_orange.svg);
+    }
+  }
+  &.v_one_form {
+    color:$spectafy-orange;
+    display:inline-block;
+    border:none;
+
+  }
+  // &.tron {
+  //   width:75%;
+  //   color:#fff;
+  // }
+  // .exampletron & {
+  //   &.location {
+  //     background-image:url(/media/location_form_white.svg);
+  //   }
+  //   &.email {
+  //     background-image:url(/media/email_form_white.svg);
+  //   }
+  // }
+  // .callout & {
+  //   background-color:rgba(0,0,0,.10);
+  // }
+  // .signoff & {
+  //   background-color:rgba(0,0,0,.10);
+  // }
+}
+// #mce-responses {
+//   font-family:$primary-sans;
+//   @include slidingdowntown;
+// }
+// #mc_embed_signup {
+//   margin-top:2.5rem;
+// }
+// #mc_embed_signup div.mce_inline_error {
+//   position:absolute;
+// }
+.mc_embed_signup {
+  // padding-top:3rem;
+  padding-bottom:3rem;
+  // .jumbotron &, {
+  //   margin-top:12%;
+  //   margin-bottom:7%;
+  // }
+  // .signoff & {
+  //   margin-top:7%;
+  //   margin-bottom:7%;
+  // }
+  // .exampletron & {
+  //   margin-top:6%;
+  //   margin-bottom:11%;
+  // }
+}
+
+
+//forms
+.form-control {
+  border-radius:0px;
+  border:1px solid $borders;
+  box-shadow:none;
+  font-family:$primary-sans;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+}
+label {
+  color:$primary-font;
+  color:$spectafy-blue;
+  font-family:$primary-sans;
+  font-weight:300;
+  font-size:18px;
+}
+
+// fance forms
+
+@function em($px, $base: 16) {
+@return ($px / $base) + em;
+}
+
+.field {
+  position: relative;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  max-width: 32rem;
+}
+.field_short {
+  max-width:28rem;
+}
+.field_long {
+  max-width:36rem;
+}
+.textarea {
+  max-width:50rem;
+}
+.field__label {
+  display: block;
+  position: absolute;
+  top: em(15, 12);
+  font-size: em(12);
+  line-height: em(15, 12);
+  font-weight: bold;
+  color: $spectafy-blue;
+}
+
+.field__input {
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  font-size: em(16);
+  line-height: em(20);
+  padding: em(5) 0;
+  height: em(30);
+  width: 100%;
+  border: 0;
+  outline: none;
+  border-bottom: em(2) solid #bbb;
+  &:valid {
+    position: relative;
+    top: em(30);
+    margin-top: em(-30);
+  }
+  &:focus {
+    border-bottom-color: $spectafy-blue;
+  }
+}
+.text_area {
+  margin-bottom:3rem;
+}
+.field__textarea {
+  box-sizing: border-box;
+  font-size: em(16);
+  line-height: em(20);
+  padding: 1rem .5rem;
+  height: 12rem;
+  width: 70%;
+  border: 0;
+  outline: none;
+  color:$primary-font;
+  font-family:$primary-sans;
+  border:1px solid $borders;
+}
+.exampletron :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    $secondary-font;
+        opacity:  1;
+    }
+.exampletron :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    $secondary-font;
+        opacity:  1;
+    }
+.exampletron ::-webkit-input-placeholder { /* WebKit browsers */
+        color:    $secondary-font;
+    }
+
+.exampletron ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    $secondary-font;
+    opacity:  1;
+    }
+.exampletron :-ms-input-placeholder { /* Internet Explorer 10+ */
+        color:    $secondary-font;
+    }

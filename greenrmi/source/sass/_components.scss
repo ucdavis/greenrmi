@@ -1,0 +1,252 @@
+// Components
+
+// bootstrap cols
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding:0px;
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  float:none;
+}
+
+.contact_message {
+  width:100%;
+}
+
+fieldset {
+  margin-top:2rem;
+}
+
+// btns
+.btn {
+  box-shadow:0 -3px 0 rgba(0, 0, 0, 0.15) inset;
+   @include transformers;
+   color: #FFFFFF;
+   border:none;
+   font-family:$primary-sans;
+   border-radius:0.3rem;
+   font-size:1.4rem;
+   text-transform:uppercase;
+   padding:1rem 2rem 1rem 2rem;
+   &.btn-green {
+    background-color:$spark-main;
+    &:hover {
+      background-color:lighten($spark-main,9)
+    }
+   }
+   i.fa {
+    margin-right:1rem;
+   }
+   &.btn-oj {
+    background-color:$spectafy-orange;
+    &:hover {
+      background-color:lighten($spectafy-orange,9)
+    }
+   }
+   &.btn-blue {
+    background-color:$spectafy-blue;
+    &:hover {
+      background-color:lighten($spectafy-blue,9)
+    }
+   }
+   &.btn-yellow {
+    background-color:$spectafy-yellow;
+    &:hover {
+      background-color:lighten($spectafy-yellow,9)
+    }
+   }
+   &.btn-fb {
+    background-color:#3B5998;
+    &.fb-share {
+      padding:.5rem 1rem;
+      font-size:1.2rem;
+    }
+    i {
+      margin-right:1.3rem;
+    }
+    &:hover {
+      background-color:lighten(#3B5998,9)
+    }
+   }
+   
+   &.btn-google {
+    background-color:#d50f25;
+    i {
+      margin-right:1.3rem;
+    }
+    &:hover {
+      background-color:lighten(#d50f25,9)
+    }
+   }
+   &.btn-tw {
+    background-color:#55acee;
+    &.tw-share {
+      padding:.5rem 1rem;
+      font-size:1.2rem;
+    }
+    i {
+      margin-right:1.3rem;
+    }
+    &:hover {
+      background-color:lighten(#55acee,9)
+    }
+   }
+}
+button.btn:hover {
+  border:none;
+  color:#fff;
+  box-shadow:0 -3px 0 rgba(0, 0, 0, 0.15) inset;
+}
+br.rwd_break {
+  display:none;
+}
+
+span.green_underline {
+  border-bottom:5px solid $spark-main;
+}
+span.blue_underline {
+  border-bottom:5px solid $spectafy-blue;
+}
+li.active a {
+    color:$spectafy-blue !important;
+}
+.fb_action{
+  top:-6px;
+}
+// alert
+.alert-success {
+  background-color:transparentize(#D6E9C6, .05);
+  @include transformers;
+}
+// modal 
+.modal-content {
+  .modal-footer {
+    text-align:center;
+  }
+}
+.rainbow {
+  background-image: url("/media/rainbow.jpg");
+  background-clip:border-box;
+  background-attachment:scroll;
+  background-position:center top;
+  background-repeat:repeat;
+  height:2px;
+}
+.affix {
+  top:0;
+}
+img {
+  // &.banner_main {
+  //   margin-bottom:-43px;
+  // }
+  &.down_arrow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  &.respo {
+    max-width:100%;
+  }
+  &.imageofapp {
+    margin:0 auto;
+    display:block;
+    margin-bottom:-10%;
+  }
+  &.img-slow-load {
+    background-color:$spark-main;
+  }
+  &.spec_icon_detail {
+    margin-bottom:3px;
+    margin-right:5px;
+  }
+  &.apple_store {
+    @include breakpoint(mobile) {
+      margin-top:5%;
+    }
+  }
+}
+.legal_buttons {
+  margin-top:5%;
+  button {
+    margin-right:3%;
+  }
+}
+
+//fonts 
+.shadow {
+  text-shadow:#666 2px 2px 3px;
+  -webkit-text-shadow:#666 2px 2px 3px;
+}
+.regular-f {
+  font-weight:400;
+}
+.twelve {
+  font-size:1.2rem;
+}
+
+// positioning
+.leftalign {
+  text-align:left;
+}
+.rightalign {
+  text-align:right;
+}
+.centeralign {
+  text-align:center;
+}
+span.linebreak {
+  display:block;
+}
+.center {
+  text-align:center;
+}
+.m-bot {
+  margin-bottom:4%;
+}
+.m-top {
+  margin-top:4%;
+}
+.m-top-zero {
+  margin-top:0px !important;
+}
+.m-zero {
+  margin:0 auto;
+}
+.m-none {
+  margin:0px;
+}
+.max-width {
+  max-width:50rem;
+}
+.inline-block {
+  display:inline-block;
+}
+// Colors
+.white {
+  color:#fff !important;
+}
+.blue {
+  color:$spectafy-blue;
+}
+.green {
+  color:$spark-main;
+}
+.orange {
+  color:$spectafy-orange;
+}
+.yellow {
+  color:$spectafy-yellow;
+}
+
+.p-font {
+  color:$primary-font;
+}
+.s-font {
+  color:$secondary-font;
+}
+.t-font {
+  color:$tertiary-font;
+}
+.float-right {
+  float:right;
+}
+
