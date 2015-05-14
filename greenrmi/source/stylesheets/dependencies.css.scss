@@ -1,7 +1,9 @@
-	
+// fonts
+	$sans-serif:		"futura-pt-1","futura-pt-2", Futura Std, Futura, Arial, sans-serif;
+	$serif:				"ff-tisa-web-pro",Georgia, serif;
 
 // pretty colors
-	
+
 	$primary-color:		#002855; // h1,h2,h3,h4 banner colors
 	$secondary-color:	#C99700; // accent color, a hovers, underlines
 
@@ -9,8 +11,11 @@
 	$secondary-font: 	#515151; // p,li color in portlet/sidebar
 	$tertiary-font:		#9b9b9b; // summary, discreet
 
-
-	$background-color:	#ebebeb; // background
+	$greenrmi-link:		#921F19; // Link
+	$greenrmi-hover:		#002666; // Link hover
+	$greenrmi-visited:	#002666; // visited
+	
+	$background-color:	#EDEAE3; // background
 	$borders:			#C8C7CC; // border color
 
 	$ucdavis-blue:		#002855;

@@ -1,4 +1,21 @@
-
-
-$bright-highlight: #FF0000;
-
+nav
+.nav-wrapper{
+	@include inner-content;
+	text-align:center;
+	margin-top:2%;
+	ul.departments {
+		width:29%;
+		display:inline-block;
+		vertical-align:top;
+	}
+	.title {
+		width:40%;
+		display:inline-block;
+		vertical-align:top;
+	}
+	ul.building {
+		width:29%;
+		vertical-align:top;
+		display:inline-block;
+	}
+}
