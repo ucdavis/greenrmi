@@ -1,5 +1,7 @@
 	
 
+// pretty colors
+	
 	$primary-color:		#002855; // h1,h2,h3,h4 banner colors
 	$secondary-color:	#C99700; // accent color, a hovers, underlines
 
@@ -33,3 +35,34 @@
 	$cenwalk-gray:		#b1b3b3;
 	$cork-oak:			#aca39a;
 	$shingle-brown:		#4f2c1d;
+
+// mixins
+
+@mixin breakpoint($point) {
+   @if $point == desktop {
+     @media (max-width: 1250px) { @content ; }
+  }
+   @else if $point == laptop {
+     @media (max-width: 1000px) { @content ; }
+  }
+  @else if $point == rufus {
+     @media (max-width: 850px) { @content ; }
+  }
+    @else if $point == tablet {
+     @media (max-width: 750px) { @content ; }
+  }
+  @else if $point == mobileonly {
+     @media (max-width: 600px)  { @content ; }
+
+  }
+  @else if $point == smallmobile {
+     @media (max-width: 450px)  { @content ; }
+
+  }
+}
+
+@mixin inner-content {
+	max-width:1200px;
+	width:80%;
+	margin:0 auto;
+}
