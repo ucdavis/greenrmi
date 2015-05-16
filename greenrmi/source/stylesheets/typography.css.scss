@@ -27,6 +27,16 @@ ul {
 		padding-left:0px;
 		li {
 			list-style-type:none;
+			margin-bottom:10px;
+			a {
+				text-transform:uppercase;
+				font-size:1.4rem;
+				color:#7A7E66;
+				letter-spacing:1px;
+				&:hover {
+					color:$greenrmi-hover;
+				}
+			}
 		}
 	}
 	footer & {
