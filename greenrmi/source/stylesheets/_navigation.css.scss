@@ -7,6 +7,16 @@ nav
 		width:29%;
 		display:inline-block;
 		vertical-align:top;
+		position:absolute;
+		z-index:500;
+		left:10%;
+		li {
+			display:none;
+			position:relative;
+		}
+		&:hover li {
+			display:list-item;
+		}
 	}
 	.title {
 		width:40%;
@@ -17,5 +27,14 @@ nav
 		width:29%;
 		vertical-align:top;
 		display:inline-block;
+		position:absolute;
+		z-index:500;
+		right:10%;
+		li {
+			display:none;
+		}
+		&:hover li {
+			display:list-item;
+		}
 	}
 }
