@@ -21,6 +21,12 @@ a {
 	&:visited {
 		color:$greenrmi-visited;
 	}
+	&.a_inherit {
+		color:inherit;
+		&:visited {
+			color:inherit;
+		}
+	}
 }
 ul {
 	footer & {
