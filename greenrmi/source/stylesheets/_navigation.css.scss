@@ -3,38 +3,32 @@ nav
 	@include inner-content;
 	text-align:center;
 	margin-top:2%;
-	ul.departments {
+	.nav_left{
 		width:29%;
 		display:inline-block;
 		vertical-align:top;
 		position:absolute;
 		z-index:500;
 		left:10%;
-		li {
-			display:none;
-			position:relative;
-		}
-		&:hover li {
-			display:list-item;
-		}
+	}
+	.nav_right {
+		width:29%;
+		display:inline-block;
+		vertical-align:top;
+		position:absolute;
+		z-index:500;
+		right:10%;
+	}
+	ul.mainnav {
+		background-color:$background-color;
+		border:2px solid #fff;
+		position:relative;
+		border-bottom-left-radius:6px;
+		border-bottom-right-radius:6px;
 	}
 	.title {
 		width:40%;
 		display:inline-block;
 		vertical-align:top;
-	}
-	ul.building {
-		width:29%;
-		vertical-align:top;
-		display:inline-block;
-		position:absolute;
-		z-index:500;
-		right:10%;
-		li {
-			display:none;
-		}
-		&:hover li {
-			display:list-item;
-		}
 	}
 }
