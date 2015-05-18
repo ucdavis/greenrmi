@@ -42,11 +42,26 @@ body {
 	}
 }
 .banner-bg {
-	height:300px;
+	height:500px;
 	background-color:#434343;
-	background-image: url(../images/building.jpg);
+	background-image: url(../images/somebuilding.jpg);
 	background-repeat:no-repeat;
-	background-position:50% 50%;
+	background-position:cover;
+	border-top:5px solid rgb(37,37,40);
+	border-bottom:3px solid rgb(37,37,40);
+}
+.banner {
+	@include inner-content;
+	.banner_words {
+		display:inline-block;
+		width:65%;
+		vertical-align:top;
+	}
+	.banner_nav {
+		display:inline-block;
+		width:34%;
+		vertical-align:top;
+	}
 }
 footer {
 	margin-top:3%;
