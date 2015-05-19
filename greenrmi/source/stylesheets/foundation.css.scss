@@ -1,0 +1,78 @@
+// Foundation
+// Styles for setting up the structure of the entire website
+
+// Border-box-sizing
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+body {
+	background-color:$background-color;
+}
+.topheader-bg{
+	background: #452c4c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #452c4c 0%, #693b71 32%, #452c4c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#452c4c), color-stop(32%,#693b71), color-stop(100%,#452c4c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #452c4c 0%,#693b71 32%,#452c4c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #452c4c 0%,#693b71 32%,#452c4c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #452c4c 0%,#693b71 32%,#452c4c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #452c4c 0%,#693b71 32%,#452c4c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#452c4c', endColorstr='#452c4c',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: 0px 6px 5px -2px rgba(181,179,181,1);
+	-moz-box-shadow: 0px 6px 5px -2px rgba(181,179,181,1);
+	box-shadow: 0px 6px 5px -2px rgba(181,179,181,1);
+}
+.topheader{
+	padding-top:10px;
+	padding-bottom:5px;
+	@include inner-content;
+	background-image: url(../images/leaves.svg);
+	background-repeat:no-repeat;
+	.topheadleft{
+		display:inline-block;
+		vertical-align:middle;
+		width:50%;
+		text-align:left;
+		img {
+			width:53%;
+		}
+	}
+	.topheadright{
+		display:inline-block;
+		vertical-align:top;
+		width:49%;
+		text-align:right;
+		img {
+			width:37%;
+		}
+	}
+}
+.banner-bg {
+	height:500px;
+	background-color:#434343;
+	background-image: url(../images/somebuilding.jpg);
+	background-repeat:no-repeat;
+	background-position:cover;
+	border-top:5px solid rgb(37,37,40);
+	border-bottom:3px solid rgb(37,37,40);
+	margin-top:5%;
+}
+.banner {
+	@include inner-content;
+	.banner_words {
+		display:inline-block;
+		width:65%;
+		vertical-align:top;
+	}
+	.banner_nav {
+		display:inline-block;
+		width:34%;
+		vertical-align:top;
+	}
+}
+footer {
+	margin-top:3%;
+	.footer_contents{
+		@include inner-content;
+		text-align:center;
+	}
+}
