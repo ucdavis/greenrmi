@@ -1,6 +1,12 @@
 // Foundation
 // Styles for setting up the structure of the entire website
+
+// Border-box-sizing
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
 body {
+	background-color:$background-color;
 }
 .topheader-bg{
 	background: #452c4c; /* Old browsers */
@@ -38,6 +44,29 @@ body {
 		img {
 			width:37%;
 		}
+	}
+}
+.banner-bg {
+	height:500px;
+	background-color:#434343;
+	background-image: url(../images/somebuilding.jpg);
+	background-repeat:no-repeat;
+	background-position:cover;
+	border-top:5px solid rgb(37,37,40);
+	border-bottom:3px solid rgb(37,37,40);
+	margin-top:5%;
+}
+.banner {
+	@include inner-content;
+	.banner_words {
+		display:inline-block;
+		width:65%;
+		vertical-align:top;
+	}
+	.banner_nav {
+		display:inline-block;
+		width:34%;
+		vertical-align:top;
 	}
 }
 footer {
