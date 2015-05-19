@@ -49,6 +49,7 @@ body {
 	background-position:cover;
 	border-top:5px solid rgb(37,37,40);
 	border-bottom:3px solid rgb(37,37,40);
+	margin-top:5%;
 }
 .banner {
 	@include inner-content;
