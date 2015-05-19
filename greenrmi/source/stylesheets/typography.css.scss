@@ -28,7 +28,18 @@ a {
 		}
 	}
 }
+ol {
+	li {
+		font-size:1.6rem;
+	}
+}
 ul {
+	li {
+		list-style-type:disc;
+		font-size:1.6rem;
+		font-family:$serif;
+		color:$primary-font;
+	}
 	footer & {
 		padding-left:0px;
 		font-size:1.4rem;

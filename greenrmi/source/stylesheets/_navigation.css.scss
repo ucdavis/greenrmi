@@ -11,7 +11,7 @@ nav
 		z-index:500;
 		left:10%;
 		&:hover ul.mainnav {
-			display:list-item;
+			display:block;
 		}
 	}
 	.nav_right {
@@ -22,7 +22,7 @@ nav
 		z-index:500;
 		right:10%;
 		&:hover ul.mainnav {
-			display:list-item;
+			display:block;
 		}
 	}
 	ul.mainnav {
