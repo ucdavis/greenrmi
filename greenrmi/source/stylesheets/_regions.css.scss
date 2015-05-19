@@ -1,5 +1,6 @@
 .total_content {
 	@include inner-content;
+	margin-top:2%;
 	.header_image {
 		border:5px solid #fff;
 		border-radius:5px;
@@ -20,6 +21,8 @@
 			width:32.333%;
 			display:inline-block;
 			vertical-align:top;
+			padding-left:2%;
+			margin-top:9%;
 		}
 	}
 }

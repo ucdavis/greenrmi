@@ -1,5 +1,10 @@
 // Foundation
 // Styles for setting up the structure of the entire website
+
+// Border-box-sizing
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
 body {
 	background-color:$background-color;
 }
