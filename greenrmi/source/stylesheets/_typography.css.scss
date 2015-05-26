@@ -39,6 +39,10 @@ ul {
 		font-size:1.6rem;
 		font-family:$serif;
 		color:$primary-font;
+		.columns & {
+			padding-top:5px;
+			padding-bottom:5px;
+		}
 	}
 	footer & {
 		padding-left:0px;
@@ -95,6 +99,11 @@ p {
 	color:$primary-font;
 	footer & {
 		font-size:1.4rem;
+	}
+	&.discreet {
+		font-size:1.4rem;
+		margin-top:1%;
+		color:$tertiary-font;
 	}
 }
 
