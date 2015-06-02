@@ -31,13 +31,14 @@
 	text-align:center;
 }
 .movie_tour {
+	margin-top:4%;
 	object {
 		padding:1.6%;
 		background-color:#fff;
 		border: 1px solid $borders;
 	}
 }
-.playlist_content {
+#playlist_content {
 	margin-top:4%;
 }
 .playlist_item {
