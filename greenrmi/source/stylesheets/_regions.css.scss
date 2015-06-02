@@ -30,14 +30,47 @@
 .subnav {
 	text-align:center;
 }
+.movie_tour {
+	object {
+		padding:1.6%;
+		background-color:#fff;
+		border: 1px solid $borders;
+	}
+}
+.playlist_content {
+	margin-top:4%;
+}
 .playlist_item {
 	display: inline-block;
-	padding:2.5%;
+	padding:1.6%;
 	margin: 10px 10px 0px 0px;
-	width: 23%;
+	width: 32%;
 	height: 100%;
 	overflow: auto;
 	background-color:#fff;
 	border: 1px solid $borders;
 	vertical-align: top;
+	max-height:415px;
+	img {
+		margin-bottom:6%;
+	}
+	h3 {
+		color:$primary-color;
+		font-size:1.8rem;
+		margin-bottom:0px;
+		margin-top:0px;
+		em {
+			font-size:1.6rem;
+			margin-top:0px;
+		}
+	}
+	p {
+		font-size:1.4rem;
+	}
+	ul {
+		padding-left:20px;
+		li {
+			font-size:1.4rem;
+		}
+	}
 }
