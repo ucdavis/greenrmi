@@ -60,13 +60,24 @@ body {
 	@include inner-content;
 	.banner_words {
 		display:inline-block;
-		width:65%;
+		width:60%;
 		vertical-align:top;
+		@include breakpoint(laptop) {
+			width:100%;
+		}
+
 	}
 	.banner_nav {
 		display:inline-block;
-		width:34%;
+		width:39%;
 		vertical-align:top;
+		margin-top:5%;
+		@include breakpoint(laptop) {
+			width:100%;
+		}
+		ul {
+			padding-left:0px;
+		}
 	}
 }
 footer {
