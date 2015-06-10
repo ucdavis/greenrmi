@@ -30,19 +30,23 @@ body {
 	.topheadleft{
 		display:inline-block;
 		vertical-align:middle;
-		width:50%;
+		width:25%;
 		text-align:left;
 		img {
-			width:53%;
+			// width:53%;
 		}
 	}
 	.topheadright{
 		display:inline-block;
 		vertical-align:top;
-		width:49%;
+		width:74%;
 		text-align:right;
-		img {
-			width:37%;
+		.rmilink {
+			width:36%;
+			display:inline-block;
+			img {
+
+			}
 		}
 	}
 }
