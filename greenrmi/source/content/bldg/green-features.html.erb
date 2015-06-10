@@ -5,37 +5,40 @@ title: How it works
 <section class="total_content">
 	<div class="row">
 		<div class="twelve columns">
-			<h1>What is LEED?</h1>
+			<h1>How it works</h1>
 		</div>
 	</div>
 	<div class="row">
 		<div class="twelve columns">
-			<div role="tabpanel">
-
-			  <!-- Nav tabs -->
-			  <ul class="nav nav-tabs" role="tablist">
-			    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-			    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-			    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-			    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-			  </ul>
-
-			  <!-- Tab panes -->
-			  <div class="tab-content">
-			    <div role="tabpanel" class="tab-pane" id="home">home</div>
-			    <div role="tabpanel" class="tab-pane" id="profile">profile</div>
-			    <div role="tabpanel" class="tab-pane" id="messages">...</div>
-			    <div role="tabpanel" class="tab-pane" id="settings">...</div>
-			  </div>
-			
-				<script type="text/javascript">$('#myTab a').click(function (e) {
-				  e.preventDefault()
-				  $(this).tab('show')
-				})</script>
-				<script type="text/javascript">
-					$('#myTab a[href="#profile"]').tab('show') // Select tab by name
-				</script>
-			</div>
+			<%= partial "howitworks" %>
+		</div>
+	</div>
+	<div class="row">
+		<div class="six columns">
+			<h2>Sustainable by design</h2>
+			<p>UC Davis’ new Brewery, Winery and Food Science Facility is a certified LEED Platinum building. Its environmental features include a close connection to community services, use of a wood paneling from a recycled 1920s water aqueduct, carbon dioxide sensors in the brewery, photovoltaic panels for solar energy, and a rainwater capture and storage system.</p>
+			<p>The new building, although not massive, is one of the most complex facilities on campus. While UC Davis has many scientific laboratories, this building must accommodate the equipment for a broad range of food and beverage processing operations.</p>
+			<p>Its high environmental quality is based on special features in six categories: sustainable site, water efficiency, energy and atmosphere, materials and resources, healthful indoor environment, and innovation and design processes that exceed LEED standards.</p>
+			<p>The facility is intended to be a showcase and teachable model of the best design, construction and production practices available within each industry represented in the facility. As industry practices advance in environmental sophistication, the building’s infrastructure and flexibility will provide a platform for demonstrating and continually improving best practices within each area of research.</p>
+		</div>
+		<div class="six columns">
+			<h2>Some Green Elements of the New Facility</h2>
+			<ul>
+			<li>Photovoltaic cells to provide all facility power at peak load</li>
+			<li>Rainwater collected and stored to irrigate landscape and flush toilets</li>
+			<li>Non-chemical filtering processes for water treatment</li>
+			<li>Reuse of processing water</li>
+			<li>Carbon dioxide from fermentation is captured and will be sequestered on site in the future </li>
+			<li>Precision metering and control systems</li>
+			<li>Winery’s Special Bottle Collections room uses recycled glass in cement floor and reclaimed 1920s aqueduct wood in ceiling.</li>
+			<li>Energy-efficient walk-in coolers/freezers have water-cooled compressors</li>
+			<li>Maximum use of natural light</li>
+			<li>High thermal energy efficiencies</li>
+			<li>Native plants for landscaping</li>
+			<li>Systems to capture and reuse processing water</li>
+			<li>Lumber harvested from sustainably certified forest operations</li></ul>
+			<p>For a complete listing of the facility’s environmentally friendly characteristics see Julianne Nola's article on <a title="What makes us LEED Platinum" class="internal-link" href="/content/bldg/leed"><strong>What makes us LEED Platinum</strong></a>.</p>
 		</div>
 	</div>
 </section>
+
