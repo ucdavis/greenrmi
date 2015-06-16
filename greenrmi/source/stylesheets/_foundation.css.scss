@@ -31,6 +31,13 @@ body {
 		display:inline-block;
 		vertical-align:middle;
 		width:25%;
+		@include breakpoint (rufus) {
+			width:34%;
+		}
+		@include breakpoint (mobileonly) {
+			width:100%;
+			margin-bottom:3%;
+		}
 		text-align:left;
 		img {
 			// width:53%;
@@ -41,9 +48,18 @@ body {
 		vertical-align:top;
 		width:74%;
 		text-align:right;
+		@include breakpoint (rufus) {
+			width:65%;
+		}
+		@include breakpoint (mobileonly) {
+			width:100%;
+		}
 		.rmilink {
 			width:36%;
 			display:inline-block;
+			@include breakpoint (mobileonly) {
+				display:none;
+			}
 			img {
 
 			}

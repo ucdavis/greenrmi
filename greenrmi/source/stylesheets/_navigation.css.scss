@@ -1,6 +1,20 @@
 // nav and search 
 
-
+form {
+	&.search {
+		width:50%;
+		display:inline-block;
+		margin-bottom:0px;
+		@include breakpoint (mobileonly) {
+			width:inherit;
+		}
+		input {
+			&.st-default-search-input {
+				width:150px;
+			}
+		}
+	}
+}
 	.gsc-control-cse {
 		background-color:rgba(255,255,255,0.0001)!important;
 		padding:0px!important;
@@ -49,6 +63,14 @@ nav
 		padding-top:2%;
 		border-top:2px solid #7B7D66;
 		display:none;
+		@include breakpoint (rufus) {
+			width:60%;
+			left:19%;
+		}
+		@include breakpoint (mobileonly) {
+			width:100%;
+			left:0%;
+		}
 		li {
 			list-style-type:none;
 			margin-bottom:10px;
@@ -69,5 +91,10 @@ nav
 		width:40%;
 		display:inline-block;
 		vertical-align:top;
+		@include breakpoint (mobileonly) {
+			width:100%;
+			padding-top:60px;
+			padding-bottom:30px;	
+		}
 	}
 }
