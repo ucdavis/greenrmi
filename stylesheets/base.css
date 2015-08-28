@@ -1,0 +1,952 @@
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 12, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 50, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 74, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 108, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 116, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 124, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 133, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 141, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 151, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 163, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 173, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 181, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 189, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 197, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+sup {
+  top: -0.5em; }
+
+/* line 201, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 213, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 221, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 233, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 245, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 256, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 267, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 281, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 294, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 306, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 316, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 328, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 340, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 349, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 360, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 373, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/normalize.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 5, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 8, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+body {
+  background-color: #EDEAE3; }
+
+/* line 11, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+.topheader-bg {
+  background: #452c4c;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #452c4c 0%, #693b71 32%, #452c4c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #452c4c), color-stop(32%, #693b71), color-stop(100%, #452c4c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #452c4c 0%, #693b71 32%, #452c4c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #452c4c 0%, #693b71 32%, #452c4c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #452c4c 0%, #693b71 32%, #452c4c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #452c4c 0%, #693b71 32%, #452c4c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#452c4c', endColorstr='#452c4c',GradientType=0 );
+  /* IE6-9 */
+  -webkit-box-shadow: 0px 6px 5px -2px #b5b3b5;
+  -moz-box-shadow: 0px 6px 5px -2px #b5b3b5;
+  box-shadow: 0px 6px 5px -2px #b5b3b5; }
+
+/* line 24, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+.topheader {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 300px;
+  background-image: url(../images/leaves.svg);
+  background-repeat: no-repeat; }
+  /* line 30, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+  .topheader .topheadleft {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    text-align: left; }
+    @media (max-width: 850px) {
+      /* line 30, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+      .topheader .topheadleft {
+        width: 34%; } }
+    @media (max-width: 600px) {
+      /* line 30, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+      .topheader .topheadleft {
+        width: 100%;
+        margin-bottom: 3%; } }
+  /* line 46, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+  .topheader .topheadright {
+    display: inline-block;
+    vertical-align: top;
+    width: 74%;
+    text-align: right; }
+    @media (max-width: 850px) {
+      /* line 46, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+      .topheader .topheadright {
+        width: 65%; } }
+    @media (max-width: 600px) {
+      /* line 46, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+      .topheader .topheadright {
+        width: 100%; } }
+    /* line 57, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+    .topheader .topheadright .rmilink {
+      width: 36%;
+      display: inline-block; }
+      @media (max-width: 600px) {
+        /* line 57, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+        .topheader .topheadright .rmilink {
+          display: none; } }
+
+/* line 69, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+.banner-bg {
+  height: 500px;
+  background-color: #434343;
+  background-image: url(../images/somebuilding.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  border-top: 5px solid #252528;
+  border-bottom: 3px solid #252528;
+  margin-top: 5%; }
+
+/* line 79, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+.banner {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 300px; }
+  /* line 81, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+  .banner .banner_words {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top; }
+    @media (max-width: 1000px) {
+      /* line 81, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+      .banner .banner_words {
+        width: 100%; } }
+  /* line 90, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+  .banner .banner_nav {
+    display: inline-block;
+    width: 39%;
+    vertical-align: top;
+    margin-top: 5%; }
+    @media (max-width: 1000px) {
+      /* line 90, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+      .banner .banner_nav {
+        width: 100%; } }
+    /* line 98, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+    .banner .banner_nav ul {
+      padding-left: 0px; }
+
+/* line 103, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+footer {
+  margin-top: 3%; }
+  /* line 105, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_foundation.css.scss */
+  footer .footer_contents {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    min-width: 300px;
+    text-align: center; }
+
+/* line 4, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+form.search {
+  width: 50%;
+  display: inline-block;
+  margin-bottom: 0px; }
+  @media (max-width: 600px) {
+    /* line 4, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+    form.search {
+      width: inherit; } }
+  /* line 12, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+  form.search input.st-default-search-input {
+    width: 150px; }
+
+/* line 18, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+.gsc-control-cse {
+  background-color: rgba(255, 255, 255, 0.0001) !important;
+  padding: 0px !important;
+  border: none !important; }
+
+/* line 25, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+nav
+.nav-wrapper {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 300px;
+  text-align: center;
+  margin-top: 2%; }
+  /* line 30, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+  nav
+  .nav-wrapper .nav_left {
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    z-index: 500;
+    left: 10%; }
+    /* line 37, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+    nav
+    .nav-wrapper .nav_left:hover ul.mainnav {
+      display: block; }
+  /* line 41, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+  nav
+  .nav-wrapper .nav_right {
+    width: 29%;
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    z-index: 500;
+    right: 10%; }
+    /* line 48, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+    nav
+    .nav-wrapper .nav_right:hover ul.mainnav {
+      display: block; }
+  /* line 52, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+  nav
+  .nav-wrapper ul.mainnav {
+    background-color: #EDEAE3;
+    border: 2px solid #fff;
+    position: relative;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    width: 50%;
+    left: 26%;
+    border-top: none;
+    margin-top: 2%;
+    padding-left: 0px;
+    padding-top: 2%;
+    border-top: 2px solid #7B7D66;
+    display: none; }
+    @media (max-width: 850px) {
+      /* line 52, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+      nav
+      .nav-wrapper ul.mainnav {
+        width: 60%;
+        left: 19%; } }
+    @media (max-width: 600px) {
+      /* line 52, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+      nav
+      .nav-wrapper ul.mainnav {
+        width: 100%;
+        left: 0%; } }
+    /* line 74, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+    nav
+    .nav-wrapper ul.mainnav li {
+      list-style-type: none;
+      margin-bottom: 10px;
+      padding: 2%; }
+      /* line 78, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+      nav
+      .nav-wrapper ul.mainnav li a {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        color: #7A7E66;
+        font-family: "futura-pt-1", "futura-pt-2", Futura Std, Futura, Arial, sans-serif;
+        letter-spacing: 1px; }
+        /* line 84, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+        nav
+        .nav-wrapper ul.mainnav li a:hover {
+          color: #002666; }
+  /* line 90, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+  nav
+  .nav-wrapper .title {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; }
+    @media (max-width: 600px) {
+      /* line 90, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_navigation.css.scss */
+      nav
+      .nav-wrapper .title {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 30px; } }
+
+/* line 2, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+html {
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  line-height: 1.5; }
+  @media (max-width: 750px) {
+    /* line 2, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+    html {
+      font-size: 8px; } }
+
+/* line 15, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+a {
+  color: #921F19;
+  text-decoration: none; }
+  /* line 18, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  a:hover {
+    color: #002666; }
+  /* line 21, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  a:visited {
+    color: #002666; }
+  /* line 24, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  a.a_inherit {
+    color: inherit; }
+    /* line 26, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+    a.a_inherit:visited {
+      color: inherit; }
+
+/* line 32, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+ol li {
+  font-size: 1.6rem; }
+
+/* line 37, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+ul li {
+  list-style-type: disc;
+  font-size: 1.6rem;
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  color: #333433; }
+  /* line 42, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  .columns ul li {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+/* line 47, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+footer ul {
+  padding-left: 0px;
+  font-size: 1.4rem;
+  font-weight: 400; }
+  /* line 51, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  footer ul li {
+    list-style-type: none;
+    display: inline; }
+/* line 56, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+ul.banner_arrows {
+  width: auto;
+  text-align: right;
+  display: inline-block;
+  padding-left: 0px; }
+  /* line 61, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  ul.banner_arrows li {
+    list-style-type: none;
+    margin-bottom: 7%; }
+    @media (max-width: 1000px) {
+      /* line 61, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+      ul.banner_arrows li {
+        display: inline-block;
+        margin-right: 5%; } }
+    @media (max-width: 600px) {
+      /* line 61, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+      ul.banner_arrows li {
+        margin-right: 0px;
+        width: 100%; } }
+    /* line 72, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+    ul.banner_arrows li a {
+      color: #000;
+      text-transform: uppercase;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 15px;
+      padding-right: 0px;
+      border: 5px solid #fff;
+      border-radius: 3px;
+      font-family: "futura-pt-1", "futura-pt-2", Futura Std, Futura, Arial, sans-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      letter-spacing: 2px; }
+      @media (max-width: 1000px) {
+        /* line 72, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+        ul.banner_arrows li a {
+          font-size: 1.4rem;
+          padding: 12px; } }
+      /* line 88, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+      ul.banner_arrows li a:hover {
+        color: #b25d40; }
+        /* line 90, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+        ul.banner_arrows li a:hover i {
+          background-color: #b25d40; }
+      /* line 94, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+      ul.banner_arrows li a i {
+        background-color: #421B4A;
+        border: 5px solid #fff;
+        padding: 15px;
+        margin-right: -32px;
+        border-radius: 50%;
+        font-size: 24px;
+        color: #fff; }
+
+/* line 107, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+p {
+  line-height: 1.625;
+  letter-spacing: .025rem;
+  font-size: 1.6rem;
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  color: #333433; }
+  /* line 113, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  footer p {
+    font-size: 1.4rem; }
+  /* line 116, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  p.discreet {
+    font-size: 1.4rem;
+    margin-top: 1%;
+    color: #9b9b9b; }
+
+/* line 123, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #333433;
+  font-family: "futura-pt-1", "futura-pt-2", Futura Std, Futura, Arial, sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-family: "futura-pt-1", "futura-pt-2", Futura Std, Futura, Arial, sans-serif; }
+
+/* line 131, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+h1, .h1 {
+  font-size: 3.6rem;
+  font-weight: 300;
+  color: #421B4A; }
+  /* line 135, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  .title h1, .title .h1 {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: #34311D;
+    font-weight: 400; }
+  /* line 141, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  .banner h1, .banner .h1 {
+    color: #421B4A;
+    font-size: 5rem;
+    font-family: "futura-pt-1", "futura-pt-2", Futura Std, Futura, Arial, sans-serif;
+    line-height: 1.1; }
+    /* line 146, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+    .banner h1 span, .banner .h1 span {
+      font-size: 7rem; }
+      @media (max-width: 1250px) {
+        /* line 146, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+        .banner h1 span, .banner .h1 span {
+          font-size: 6rem; } }
+    @media (max-width: 1250px) {
+      /* line 141, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+      .banner h1, .banner .h1 {
+        font-size: 4.5rem; } }
+
+/* line 157, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+h2, .h2 {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #333433; }
+  /* line 162, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  .banner h2, .banner .h2 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "futura-pt-1", "futura-pt-2", Futura Std, Futura, Arial, sans-serif;
+    color: #5a585c;
+    margin-top: -37px; }
+
+/* line 172, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+h3, .h3 {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 400; }
+  /* line 176, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  .sidecol h3, .sidecol .h3 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #5a585c;
+    border-bottom: 1px solid #C8C7CC; }
+
+/* line 183, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+h4 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  color: #333433; }
+
+/* line 188, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+h5 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #7A7E66; }
+  /* line 192, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+  .nav-wrapper h5 {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "futura-pt-1", "futura-pt-2", Futura Std, Futura, Arial, sans-serif;
+    font-weight: 500;
+    margin-bottom: 0px;
+    line-height: 1.8; }
+
+/* line 203, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_typography.css.scss */
+span.italicberk {
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-style: italic; }
+
+/* line 3, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+.btn.btn-subnav {
+  background-color: #421B4A;
+  border: none;
+  color: #fff;
+  font-family: "ff-tisa-web-pro", Georgia, serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 1% 2.5%; }
+  /* line 11, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+  .btn.btn-subnav:hover {
+    background-color: #b25d40;
+    color: #fff; }
+
+/* line 17, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+img {
+  max-width: 100%; }
+  /* line 19, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+  img.left_image {
+    float: left;
+    margin-left: -8%;
+    margin-right: 2%; }
+  /* line 24, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+  img.right_image {
+    float: right;
+    margin-left: 2%; }
+  /* line 28, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+  img.img_border {
+    border: 3px solid #fff;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(90, 90, 90, 0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(90, 90, 90, 0.75);
+    box-shadow: 0px 0px 8px 0px rgba(90, 90, 90, 0.75);
+    margin: 3%; }
+
+/* line 36, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+.pullright {
+  float: right;
+  display: block;
+  width: 33%; }
+  /* line 40, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+  .pullright img {
+    margin-bottom: 10px; }
+
+/* line 44, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+.f-right {
+  float: right; }
+
+/* line 47, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+.text-center {
+  text-align: center; }
+
+/* line 50, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_components.css.scss */
+.pullquote {
+  color: #421B4A;
+  font-weight: 600;
+  float: right;
+  font-size: 1.8rem;
+  width: 40%;
+  clear: right;
+  margin-left: 2%;
+  margin-bottom: 2%; }
+
+/* line 1, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+.total_content {
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  min-width: 300px;
+  margin-top: 2%; }
+  /* line 4, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+  .total_content .header_image {
+    border: 5px solid #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(90, 90, 90, 0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(90, 90, 90, 0.75);
+    box-shadow: 0px 0px 8px 0px rgba(90, 90, 90, 0.75);
+    margin-bottom: 3%; }
+    /* line 11, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+    .total_content .header_image img {
+      width: 100%; }
+  /* line 16, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+  .total_content .innerds .maincol {
+    width: 66.6666%;
+    display: inline-block;
+    vertical-align: top; }
+  /* line 21, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+  .total_content .innerds .sidecol {
+    width: 32.333%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 2%;
+    margin-top: 9%; }
+
+/* line 30, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+.subnav {
+  text-align: center; }
+
+/* line 33, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+.movie_tour {
+  margin-top: 4%; }
+  /* line 35, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+  .movie_tour object {
+    padding: 1.6%;
+    background-color: #fff;
+    border: 1px solid #C8C7CC; }
+
+/* line 41, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+#playlist_content {
+  margin-top: 4%; }
+
+/* line 44, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+.playlist_item {
+  display: inline-block;
+  padding: 1.6%;
+  margin: 10px 10px 0px 0px;
+  width: 32%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fff;
+  border: 1px solid #C8C7CC;
+  vertical-align: top;
+  max-height: 415px; }
+  /* line 55, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+  .playlist_item img {
+    margin-bottom: 6%; }
+  /* line 58, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+  .playlist_item h3 {
+    color: #421B4A;
+    font-size: 1.8rem;
+    margin-bottom: 0px;
+    margin-top: 0px; }
+    /* line 63, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+    .playlist_item h3 em {
+      font-size: 1.6rem;
+      margin-top: 0px; }
+  /* line 68, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+  .playlist_item p {
+    font-size: 1.4rem; }
+  /* line 71, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+  .playlist_item ul {
+    padding-left: 20px; }
+    /* line 73, /Users/cydoval/Documents/work/ucdavis_cru/Web/greenrmi-git/greenrmi/source/stylesheets/_regions.css.scss */
+    .playlist_item ul li {
+      font-size: 1.4rem; }
